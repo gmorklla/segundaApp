@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/page/head.ejs %>
+    <% include partials/page/logincss.ejs %>
+  </head>
+  <body>
+    <% include partials/page/header.ejs %>
+    
+    <div class="container">
+
+      <form class="form-signin" method="post" action="/registro">
+        <h2 class="form-signin-heading">Please sign in</h2>
+
+        <label for="inputName" class="sr-only">Nombre</label>
+        <input type="text" name="inputName" class="form-control" placeholder="Nombre" required autofocus>
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" class="form-control" placeholder="Email address" required>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" class="form-control" placeholder="Password" required>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Inscribirse</button>
+      </form>
+
+    </div> <!-- /container -->
+
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsDefaults.ejs %>
+  </body>
+</html>
