@@ -33,4 +33,4 @@ if ('development' == app.get('env')) {
 app.get('/login', routes.login);
 app.post('/registro', routes.registro);
 
-module.exports = app
+module.exports = app;
